@@ -6,9 +6,9 @@ import pickle
 with open('scaler.pkl', 'rb') as f:
     scaler = pickle.load(f)
 
-st.title('NBA player discovery')
-st.write('this webpp helps you get players based on your needs')
-st.write('enter your needs')
+st.title('NBA Player Scouting & Recommendation Tool')
+st.write('Discover NBA players who best match your scouting criteria.')
+st.write('Use the sliders below to specify the player attributes you need')
 
 fg = st.slider('FG', min_value=0.0, max_value=12.64, value=0.0, step=0.1)
 fga = st.slider('FGA', min_value=0.0, max_value=23.34, value=0.0, step=0.01)
